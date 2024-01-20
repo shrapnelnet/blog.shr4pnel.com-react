@@ -33,4 +33,6 @@ a big clump of houses, seen from the top of the mountain. it was a nice sight. o
 
 ![a tree stump covered in vines and mushrooms](/article/switzerland/mushroom_trunk.jpg)
 
-a few little mushrooms on a tree stump. it lived deep in the forest\nas always, don't hesitate to email. <3
+a few little mushrooms on a tree stump. it lived deep in the forest 
+
+as always, don't hesitate to email. <3

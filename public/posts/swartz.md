@@ -73,7 +73,7 @@ I wish i had talked to him just once. you are so lucky if you did.
 
 Thanks, Aaron.
 
-![Yellowing memorial page for aaron swartz' memorial](/article//swartz/aaronswmemorialprogram_0059.jpg)
+![Yellowing memorial page for aaron swartz' memorial](/article/swartz/aaronswmemorialprogram_0059.jpg)
 
 Ideas never really die.
 
