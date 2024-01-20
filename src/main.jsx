@@ -4,10 +4,8 @@ import Index from "./pages/Index.jsx"
 import { createRoot } from "react-dom/client"
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import Error from "./pages/Error.jsx"
-import { Buffer } from "buffer"
 import Post from "./pages/Post.jsx"
 import Minesweeper from "./pages/Minesweeper.jsx"
-globalThis.Buffer = Buffer
 
 const router = createBrowserRouter([
     {
