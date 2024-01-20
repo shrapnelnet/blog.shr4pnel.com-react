@@ -1,0 +1,203 @@
+body {
+    font-family: 'Toshiba Saturn', monospace;
+    background-color: #dbfbb3;
+    background-image: url("/graphics/frog.gif");
+    max-height: 100%;
+    max-width: 100%;
+}
+
+a {
+    color: green;
+}
+
+img {
+    max-width: 100%;
+}
+
+p > img {
+    display: block;
+    margin-bottom: 10px;
+}
+
+@font-face {
+    font-family: "Toshiba Saturn";
+    src: url("/font/ToshibaSat_8x8.woff") format("woff");
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "IBM VGA";
+    src: url("/font/IBM_VGA_8x16.woff2") format("woff2");
+    font-display: fallback;
+}
+
+.container {
+    position: relative;
+    width: 900px;
+    max-width: 95%;
+    background-color: white;
+    border: 1px solid black;
+    margin: 25px auto 0;
+    text-align: center;
+    padding: 25px 0;
+}
+
+.title-container {
+    width: fit-content;
+    padding: 0 5%;
+}
+
+.logo {
+    letter-spacing: 5px;
+    text-shadow: -4px 3px green;
+    text-align: center;
+}
+
+.highlighted {
+    color: white;
+    background-color: green;
+    padding: 5px 30px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.post-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#articles {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    width: fit-content;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card > a {
+    text-align: left;
+    margin-left: 2%;
+    font-size: small;
+    line-height: 1.5em;
+    flex-grow: 1;
+    padding-right: 2%;
+}
+
+.card > p {
+    text-align: right;
+    font-size: small;
+    margin-left: auto;
+}
+
+#socials {
+    display: block;
+    margin: 30px auto;
+    width: fit-content;
+}
+
+#socials > div {
+    display: flex;
+    align-items: center;
+    margin: 18px auto auto 8.5%;
+}
+
+#socials > div > img {
+    margin-right: 10px;
+}
+
+.friend-container {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.friend-container > img {
+    width: 88px;
+    height: 31px;
+}
+
+.friend-container > a {
+    margin-right: 3px;
+}
+
+.lain > img {
+    width: 240px;
+    height: 60px
+}
+
+.flex-wrap {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.fake-logo {
+    width: 42px;
+}
+
+.lain-text {
+    line-height: 1.25em;
+    width: 80%;
+    text-align: left;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 467px) {
+    .container {
+        margin: 10px auto 0;
+    }
+
+    #socials > div {
+        margin: 20px 0 0;
+    }
+
+    #socials > div > a {
+        font-size: smaller;
+    }
+
+    .logo {
+        font-size: x-large;
+        text-shadow: -3px 2px green;
+        word-wrap: break-word;
+    }
+
+    .card {
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+
+    .card > p {
+        margin-left: 2%;
+    }
+
+    .card > img {
+        padding-top: 2%;
+    }
+
+    .highlighted {
+        padding: 5px 15px;
+    }
+
+    .title-container {
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-width: 341px) {
+    #socials > div > a {
+        font-size: x-small;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #socials > div > a {
+        font-size: xx-small;
+    }
+}

@@ -1,0 +1,55 @@
+/* by me. :3 */
+/* under wtfpl 1.0 */
+
+input, img {
+    user-select: none;
+}
+
+#score-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 557px;
+    margin: 10px auto 0;
+    background-color: #bdbdbd;
+    box-shadow: inset -5px 0 #858388, inset 5px 5px #fdf8eb;
+}
+
+#score-container > * {
+    padding: 10px 0;
+}
+
+.score-bevel {
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    box-shadow: inset 5px 5px #858388, inset -5px -5px #fdf8eb;
+    margin: 20px
+}
+
+.number-group {
+    display: block;
+    width: 78px;
+}
+
+.number-group > img {
+    width: 28.5%;
+}
+
+#game-grid {
+    display: grid;
+    width: 517px;
+    height: 517px;
+    margin: 0 auto;
+    grid-template-rows: repeat(16, 1fr);
+    grid-template-columns: repeat(16, 1fr);
+    background-color: #bdbdbd;
+    box-shadow: inset 5px 0 #fdf8eb, inset -5px -5px #858388;
+    padding: 0 20px 20px
+}
+
+.button-group > label {
+    padding: 0 1% 0 0.5%;
+}

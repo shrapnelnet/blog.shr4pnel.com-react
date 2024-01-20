@@ -1,0 +1,156 @@
+@font-face {
+    font-family: "Toshiba Saturn";
+    src: url("/font/ToshibaSat_8x8.woff") format("woff");
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "IBM VGA";
+    src: url("/font/IBM_VGA_8x16.woff2") format("woff2");
+    font-display: fallback;
+}
+
+body {
+    font-family: 'Toshiba Saturn', monospace;
+    background-color: #dbfbb3;
+    background-image: url("/graphics/frog.gif");
+    max-height: 100%;
+    max-width: 100%;
+}
+
+a {
+    color: green;
+}
+
+img {
+    max-width: 100%;
+}
+
+p > img {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.use-ibm > p {
+    font-family: "IBM VGA", monospace;
+    font-size: 1.125em;
+}
+
+footer > a {
+    margin-top: 40px;
+    font-size: 12px;
+}
+
+.use-ibm > sub {
+    font-size: x-small;
+}
+
+.container {
+    position: relative;
+    width: 900px;
+    max-width: 95%;
+    background-color: white;
+    border: 1px solid black;
+    margin: 25px auto 0;
+    text-align: center;
+    padding: 25px 0;
+}
+
+.title-container {
+    width: fit-content;
+    padding: 0 5%;
+}
+
+.logo {
+    letter-spacing: 5px;
+    text-shadow: -4px 3px green;
+    text-align: center;
+}
+
+.highlighted {
+    color: white;
+    background-color: green;
+    padding: 5px 30px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.post-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#socials {
+    display: block;
+    margin: 30px auto;
+    width: fit-content;
+}
+
+#socials > div {
+    display: flex;
+    align-items: center;
+    margin: 18px auto auto 8.5%;
+}
+
+#socials > div > img {
+    margin-right: 10px;
+}
+
+#hotline {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+#content {
+    text-align: left;
+    margin: 0 auto;
+    width: 85%;
+    display: block;
+}
+
+@media only screen and (max-width: 467px) {
+    .container {
+        margin: 10px auto 0;
+    }
+
+    #socials > div {
+        margin: 20px 0 0;
+    }
+
+    #socials > div > a {
+        font-size: smaller;
+    }
+
+    .logo {
+        font-size: x-large;
+        text-shadow: -3px 2px green;
+        word-wrap: break-word;
+    }
+
+    .highlighted {
+        padding: 5px 15px;
+    }
+
+    .title-container {
+        padding: 5px;
+    }
+}
+
+.ducks {
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 341px) {
+    #socials > div > a {
+        font-size: x-small;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #socials > div > a {
+        font-size: xx-small;
+    }
+}
