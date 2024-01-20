@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>blog.shr4pnel.com</title>
+        <link>https://blog.shr4pnel.com</link>
+        <description>Ruminations on music, the world and whatever rubbish pops into my head delivered straight to you.</description>
+        <language>en</language>
+        <webMaster>shrapnelnet@protonmail.com (big tyler)</webMaster>
+        <lastBuildDate>Sat, 20 Jan 2024 03:19:10 GMT</lastBuildDate>
+        <pubDate>Fri, 28 Jul 2023 15:04:31 GMT</pubDate>
+        <generator>shrapnelnet RSS servant v1.0</generator>
+        <docs>https://cyber.harvard.edu/rss/rss.html</docs>
+        <item>
+            <title>the great react rewrite of '24</title>
+            <link>https://blog.shr4pnel.com/posts/joy</link>
+            <author>admin@shr4pnel.com (big tyler)</author>
+            <pubDate>Sat, 20 Jan 2024 03:19:10 GMT</pubDate>
+            <guid>https://blog.shr4pnel.com/posts/joy</guid>
+            <description>i mope about how doing things 'the right way' is a pain in the ass.</description>
+        </item>
+        <item>
+            <title>suicide in art and philosophy</title>
+            <link>https://blog.shr4pnel.com/posts/suicide</link>
+            <author>admin@shr4pnel.com (big tyler)</author>
+            <pubDate>Wed, 01 Nov 2023 23:18:44 GMT</pubDate>
+            <guid>https://blog.shr4pnel.com/posts/suicide</guid>
+            <description>a delve into the theme of suicide, looking at the works of painters and philosophers through history</description>
+        </item>
+        <item>
+            <title>Switzerland 2023</title>
+            <link>https://blog.shr4pnel.com/posts/switzerland</link>
+            <author>admin@shr4pnel.com (big tyler)</author>
+            <pubDate>Fri, 15 Sep 2023 21:02:34 GMT</pubDate>
+            <guid>https://blog.shr4pnel.com/posts/switzerland</guid>
+            <description>photos of my trip to switzerland, lots of cows and trees to be seen here.</description>
+        </item>
+        <item>
+            <title>The death of Aaron Swartz, or: "fiction's about what it is to be a fucking human being"</title>
+            <link>https://blog.shr4pnel.com/posts/swartz</link>
+            <author>admin@shr4pnel.com (big tyler)</author>
+            <pubDate>Tue, 08 Aug 2023 18:22:30 GMT</pubDate>
+            <guid>https://blog.shr4pnel.com/posts/swartz</guid>
+            <description>Tyler covers the life and death of Aaron Swartz, a software pioneer and general near-savant who stuck to their principles to the end.</description>
+        </item>
+        <item>
+            <title>Diversifying tastes in music, or: "why you should be listening to good music instead of your music"</title>
+            <link>https://blog.shr4pnel.com/posts/diversifying</link>
+            <author>admin@shr4pnel.com (big tyler)</author>
+            <pubDate>Mon, 07 Aug 2023 19:11:30 GMT</pubDate>
+            <guid>https://blog.shr4pnel.com/posts/diversifying</guid>
+            <description>Tyler covers the riveting music scene and mentions a lot of niche bands and people you should listen to.</description>
+        </item>
+        <item>
+            <title>Infrastructure updates and web revival, or: "why the internet fucking sucks and will possibly forever"</title>
+            <link>https://blog.shr4pnel.com/posts/webrevival</link>
+            <author>admin@shr4pnel.com (big tyler)</author>
+            <pubDate>Fri, 28 Jul 2023 15:04:31 GMT</pubDate>
+            <guid>https://blog.shr4pnel.com/posts/webrevival</guid>
+            <description>a brief microarticle on my gripes with the modern web development scene as well as what social media has developed into.</description>
+        </item>
+    </channel>
+</rss>
