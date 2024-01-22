@@ -10,6 +10,7 @@
     "preview": "vite preview --host --port 3000"
   },
   "dependencies": {
+    "@tanstack/eslint-plugin-query": "^5.17.20",
     "buffer": "^6.0.3",
     "gray-matter": "^4.0.3",
     "react": "^18.2.0",
@@ -20,6 +21,7 @@
     "remark-emoji": "^4.0.1"
   },
   "devDependencies": {
+    "@tanstack/react-query": "^5.17.19",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.18",
     "@vitejs/plugin-react": "^4.2.1",
