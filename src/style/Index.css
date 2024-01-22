@@ -150,6 +150,10 @@ p > img {
 }
 
 @media only screen and (max-width: 467px) {
+    .friend-container {
+        margin: 20px 3%;
+    }
+
     .container {
         margin: 10px auto 0;
     }

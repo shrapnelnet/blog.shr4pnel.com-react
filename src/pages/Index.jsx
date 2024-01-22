@@ -2,9 +2,11 @@ import React from "react"
 import "../style/Index.css"
 import IndexPosts from "../components/IndexPosts.jsx"
 import { Link } from "react-router-dom"
-const Lain = React.lazy(() => import("../components/Lain"))
-const Friends = React.lazy(() => import("../components/Friends"))
-const Socials = React.lazy(() => import("../components/Socials"))
+import Lain from "../components/Lain.jsx"
+import Friends from "../components/Friends.jsx"
+import Socials from "../components/Socials.jsx"
+
+
 export default function Index() {
     return (
         <React.Fragment>
@@ -15,7 +17,7 @@ export default function Index() {
             </header>
             <main>
                 <div className="container">
-                    <IndexPosts/>
+                    <IndexPosts />
                     <p>or uhh just play <Link to="/minesweeper">minesweeper</Link> :3</p>
                     <img src="/graphics/cutiecat.gif" alt="line of cats dancing"/>
                     <footer>

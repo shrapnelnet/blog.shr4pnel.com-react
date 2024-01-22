@@ -1,4 +1,4 @@
-import React from "react"
+import React, { startTransition } from "react"
 import matter from "gray-matter"
 import { Link } from "react-router-dom"
 import { useQuery } from "@tanstack/react-query"
@@ -10,38 +10,40 @@ const sort = (a, b) => {
     return -1
 }
 
-async function getPosts() {
-    try {
-        let masterlist = await fetch("/posts/masterlist.json")
-        const masterlistJSON = await masterlist.json()
-        const posts = masterlistJSON.map((post) => `/posts/${post}`)
-        const headers = new Headers()
-        headers.set("Accept", "text/markdown")
-        const postURLArrayMap = await Promise.all(
-            posts.map((post) => (
-                fetch(post, {headers})
-                    .then((res) => res.text())
-            ))
-        )
-        const parsedPosts = postURLArrayMap.map((post) => matter(post))
-        parsedPosts.sort(sort)
-        return parsedPosts
-    } catch (err) {
-        console.error(err)
-        return err
-    }
+function getPosts() {
+    return fetch("/posts/masterlist.json")
+        .then((masterlist) => masterlist.json())
+        .then((masterlistJSON) => {
+            const posts = masterlistJSON.map((post) => `/posts/${post}`)
+            const headers = new Headers()
+            headers.set("Accept", "text/markdown")
+            return Promise.all(
+                posts.map((post) =>
+                    fetch(post, { headers }).then((res) => res.text())
+                )
+            )
+        })
+        .then((postURLArrayMap) => {
+            const parsedPosts = postURLArrayMap.map((post) => matter(post))
+            parsedPosts.sort(sort)
+            return parsedPosts
+        })
+        .catch((err) => {
+            console.error(err)
+            return err
+        })
 }
+
 
 export default function IndexPosts() {
     const { isPending, isError, data, error } = useQuery({
         queryKey: ["posts"],
-        queryFn: async () => {
-            return await getPosts()
+        queryFn: () => {
+            return getPosts()
         },
     })
 
     if (isPending) {
-        console.log("pending!", isPending, isError, data)
         return <></>
     }
 
