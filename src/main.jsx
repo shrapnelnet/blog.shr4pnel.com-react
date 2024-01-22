@@ -6,6 +6,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import Error from "./pages/Error.jsx"
 import Post from "./pages/Post.jsx"
 import Minesweeper from "./pages/Minesweeper.jsx"
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
+
+const queryClient = new QueryClient()
 
 const router = createBrowserRouter([
     {
@@ -25,4 +28,8 @@ const router = createBrowserRouter([
 ])
 
 const root = createRoot(document.getElementById("root"))
-root.render(<RouterProvider router={router} />)
+root.render(
+    <QueryClientProvider client={queryClient}>
+        <RouterProvider router={router} />
+    </QueryClientProvider>
+)

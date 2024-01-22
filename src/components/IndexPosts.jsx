@@ -1,54 +1,60 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 import matter from "gray-matter"
 import { Link } from "react-router-dom"
+import { useQuery } from "@tanstack/react-query"
+
+const sort = (a, b) => {
+    if (a.data.date < b.data.date) {
+        return 1
+    }
+    return -1
+}
+
+async function getPosts() {
+    try {
+        let masterlist = await fetch("/posts/masterlist.json")
+        const masterlistJSON = await masterlist.json()
+        const posts = masterlistJSON.map((post) => `/posts/${post}`)
+        const headers = new Headers()
+        headers.set("Accept", "text/markdown")
+        const postURLArrayMap = await Promise.all(
+            posts.map((post) => (
+                fetch(post, {headers})
+                    .then((res) => res.text())
+            ))
+        )
+        const parsedPosts = postURLArrayMap.map((post) => matter(post))
+        parsedPosts.sort(sort)
+        return parsedPosts
+    } catch (err) {
+        console.error(err)
+        return err
+    }
+}
 
 export default function IndexPosts() {
-    const sort = (a, b) => {
-        if (a.data.date < b.data.date) {
-            return 1
-        }
-        return -1
+    const { isPending, isError, data, error } = useQuery({
+        queryKey: ["posts"],
+        queryFn: async () => {
+            return await getPosts()
+        },
+    })
+
+    if (isPending) {
+        console.log("pending!", isPending, isError, data)
+        return <></>
     }
 
-    const [posts, setPosts] = useState([])
+    if (isError) {
+        return <h4>{error.message}</h4>
+    }
 
-    // monstrous effect.... sorry!
-    useEffect(() => {
-        // get all posts that are available and serialize them
-        fetch("/posts/masterlist.json")
-            .then((res) => res.json())
-            // get all of the urls to fetch in one array
-            .then((posts) => {
-                return posts.map((post) => (`/posts/${post}`))
-            })
-            // Return one big promise with all of the markdown
-            .then((postURLArray) => {
-                const headers = new Headers()
-                headers.set("Accept", "text/markdown")
-                return Promise.all(
-                    postURLArray.map((post) => (
-                        fetch(post, {headers})
-                            .then((res) => res.text())
-                    )))
-            })
-            // we recieve a promise containing raw front-matter yaml
-            // you then return a new array with the parsed front-matter
-            .then((postsNonParsed) => {
-                // pull out the tasty yaml goodness
-                return postsNonParsed
-                    .map((post) => matter(post))
-            })
-            .then((storedPosts) => {
-                storedPosts.sort(sort)
-                setPosts([...posts, ...storedPosts])
-            })
-    }, [])
     return (
         <React.Fragment>
             <h2 className="highlighted">articles</h2>
             <div id="articles">
                 {
-                    posts.map((post, index) => (
+                    data.map((post, index) => (
                         <article key={index}>
                             <div className="card">
                                 <img src="/graphics/anon.png" alt="tumblr anonymous grey face with sunglasses" height={80} width={80} />
