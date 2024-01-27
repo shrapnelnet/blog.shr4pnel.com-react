@@ -169,6 +169,12 @@ export default function Lain() {
                     alt="black and white, dice that says torpus."
                 />
             </a>
+            <a href="https://nauxnam.net" target="_blank" rel="noreferrer">
+                <img
+                    src="/lain/nauxnam.gif"
+                    alt="spinning human head with glitchy background effect"
+                />
+            </a>
         </div>
     )
 }
