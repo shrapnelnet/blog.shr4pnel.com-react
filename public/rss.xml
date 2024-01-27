@@ -11,6 +11,14 @@
         <generator>shrapnelnet RSS servant v1.0</generator>
         <docs>https://cyber.harvard.edu/rss/rss.html</docs>
         <item>
+            <title>physical media: it ain't so bad!</title>
+            <link>https://blog.shr4pnel.com/posts/physical</link>
+            <author>admin@shr4pnel.com (big tyler)</author>
+            <pubDate>Sat, 27 Jan 2024 18:10:34 GMT</pubDate>
+            <guid>https://blog.shr4pnel.com/posts/physical</guid>
+            <description>tyler moans about how much they like their damn cds!</description>
+        </item>
+        <item>
             <title>the great react rewrite of '24</title>
             <link>https://blog.shr4pnel.com/posts/joy</link>
             <author>admin@shr4pnel.com (big tyler)</author>
