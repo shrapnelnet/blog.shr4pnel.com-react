@@ -163,6 +163,12 @@ export default function Lain() {
                     alt="16bit style blonde character on baby blue background. text reads maerk.xyz"
                 />
             </a>
+            <a href="https://torpus.info" target="_blank" rel="noreferrer">
+                <img
+                    src="/lain/torpus.png"
+                    alt="black and white, dice that says torpus."
+                />
+            </a>
         </div>
     )
 }
