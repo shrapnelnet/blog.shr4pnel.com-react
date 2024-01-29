@@ -113,10 +113,8 @@ p > img {
 }
 
 .friend-container {
-    margin: 20px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    margin: 20px auto;
+    width: 80%;
 }
 
 .friend-container > img {
