@@ -44,7 +44,7 @@ export default function IndexPosts() {
     })
 
     if (isPending) {
-        return <></>
+        return <div className={"placeholder"}></div>
     }
 
     if (isError) {
@@ -53,7 +53,6 @@ export default function IndexPosts() {
 
     return (
         <React.Fragment>
-            <h2 className="highlighted">articles</h2>
             <div id="articles">
                 {
                     data.map((post, index) => (

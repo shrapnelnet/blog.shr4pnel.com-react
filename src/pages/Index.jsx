@@ -58,19 +58,20 @@ export default function Index() {
             </header>
             <main>
                 <div className="container">
-                    <IndexPosts />
+                    <h2 className="highlighted">articles</h2>
+                    <IndexPosts/>
                     <p>or uhh just play <Link to="/minesweeper">minesweeper</Link> :3</p>
                     <img src="/graphics/cutiecat.gif" alt="line of cats dancing"/>
                     <footer>
                         <div id="socials">
                             <h2 className="highlighted">socials</h2>
-                            <Socials />
+                            <Socials/>
                         </div>
                         <div id="friends">
                             <h2 className="highlighted">friends</h2>
-                            <Friends />
+                            <Friends/>
                             <h2 className="highlighted">lainchan</h2>
-                            <Lain />
+                            <Lain/>
                         </div>
                     </footer>
                 </div>
