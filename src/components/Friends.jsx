@@ -74,6 +74,13 @@ export default function Friends() {
                     loading="lazy"
                 />
             </a>
+            <a href="https://dumbdizzy.neocities.org/" target="_blank" rel="noreferrer">
+                <img
+                    src="/buttons/dumbdizzy.gif"
+                    alt="blurred bunny with text reading dumbdizzy in black to yellow downwards gradient"
+                    loading="lazy"
+                />
+            </a>
         </div>
     )
 }
