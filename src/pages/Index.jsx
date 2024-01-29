@@ -59,7 +59,7 @@ export default function Index() {
             <main>
                 <div className="container">
                     <h2 className="highlighted">articles</h2>
-                    <IndexPosts/>
+                    <IndexPosts />
                     <p>or uhh just play <Link to="/minesweeper">minesweeper</Link> :3</p>
                     <img src="/graphics/cutiecat.gif" alt="line of cats dancing"/>
                     <footer>

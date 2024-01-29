@@ -44,7 +44,11 @@ export default function IndexPosts() {
     })
 
     if (isPending) {
-        return <div className={"placeholder"}></div>
+        return (
+            <div className={"placeholder"}>
+                <p>i&apos;m loading :3</p>
+            </div>
+        )
     }
 
     if (isError) {
