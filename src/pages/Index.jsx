@@ -33,7 +33,13 @@ const quotebank = [
     "are you okay, dude?",
     "axolotl fan",
     "this user enjoys smirnoff",
-    "this user enjoys chekhov"
+    "this user enjoys chekhov",
+    "now with 50% less sugar",
+    "contains nicotine and tar",
+    "only to be sold as a multipack",
+    "banned in syria!",
+    "popular in azerbajan!",
+    "friends with sewerslvt!"
 ]
 
 function getQuote() {
