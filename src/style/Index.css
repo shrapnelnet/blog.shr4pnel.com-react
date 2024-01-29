@@ -154,9 +154,6 @@ p > img {
         margin: 20px 3%;
     }
 
-    .container {
-        margin: 10px auto 0;
-    }
 
     #socials > div {
         margin: 20px 0 0;
@@ -172,13 +169,13 @@ p > img {
         word-wrap: break-word;
     }
 
-    .card {
-        flex-wrap: wrap;
-        margin-bottom: 30px;
+    .card > p {
+        margin-left: 1%;
+        font-size: 10px;
     }
 
-    .card > p {
-        margin-left: 2%;
+    .card > a {
+        font-size: 12px ;
     }
 
     .card > img {
