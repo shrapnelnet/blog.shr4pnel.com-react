@@ -60,13 +60,6 @@ export default function Friends() {
                     loading="lazy"
                 />
             </a>
-            <a href="https://risingthumb.xyz" target="_blank" rel="noreferrer">
-                <img
-                    src="/buttons/risingthumb.png"
-                    alt="rose petals swept by the wind"
-                    loading="lazy"
-                />
-            </a>
             <a href="https://idelides.xyz" target="_blank" rel="noreferrer">
                 <img
                     src="/buttons/idelides.png"
