@@ -154,9 +154,6 @@ export default function Lain() {
                     alt="yellow border, reddish black background. yellow text flickering like electricity flicking between 2 phrases: grafo, .zone"
                 />
             </a>
-            <a href="https://risingthumb.xyz" target="_blank" rel="noreferrer">
-                <img src="/lain/risingthumb.png" alt="rose petals swept in the wind"/>
-            </a>
             <a href="https://maerk.xyz" target="_blank" rel="noreferrer">
                 <img
                     src="/lain/maerk.png"
