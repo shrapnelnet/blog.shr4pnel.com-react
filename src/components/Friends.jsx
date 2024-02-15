@@ -74,6 +74,13 @@ export default function Friends() {
                     loading="lazy"
                 />
             </a>
+            <a href="https://voicedrew.xyz/" target="_blank" rel="noreferrer">
+                <img
+                    src="/buttons/voicedrew.gif"
+                    alt="voicedrew's button!"
+                    loading="lazy"
+                />
+            </a>
         </div>
     )
 }
