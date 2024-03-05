@@ -172,6 +172,9 @@ export default function Lain() {
                     alt="spinning human head with glitchy background effect"
                 />
             </a>
+            <a href="https://lainnet.superglobalmegacorp.com/">
+                <img src="/lain/lainnet.png" alt="lainnet banner. red text on black background next to lain iwakura"/>
+            </a>
         </div>
     )
 }
