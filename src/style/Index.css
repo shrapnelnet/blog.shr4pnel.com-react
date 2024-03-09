@@ -154,6 +154,18 @@ p > img {
     margin-top: 10px;
 }
 
+/* CLS FIX */
+
+div.friend-container > a > img {
+    width: 88px;
+    height: 31px;
+}
+
+div.friend-container.lain > a > img {
+    width: 240px;
+    height: 60px;
+}
+
 @media only screen and (max-width: 467px) {
     .friend-container {
         margin: 20px auto;

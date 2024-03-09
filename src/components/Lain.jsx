@@ -94,9 +94,8 @@ export default function Lain() {
             <a href="https://jahanrashidi.com/explore/" target="_blank" rel="noreferrer">
                 <img
                     src="/lain/smile.png"
-                    width="240"
-                    height="60"
                     alt="emoticon smiley face on a grey backdrop"
+                    loading="lazy"
                 />
             </a>
             <a href="https://bass2nick.com" target="_blank" rel="noreferrer">
@@ -158,22 +157,57 @@ export default function Lain() {
                 <img
                     src="/lain/maerk.png"
                     alt="16bit style blonde character on baby blue background. text reads maerk.xyz"
+                    loading="lazy"
                 />
             </a>
             <a href="https://torpus.info" target="_blank" rel="noreferrer">
                 <img
                     src="/lain/torpus.png"
                     alt="black and white, dice that says torpus."
+                    loading="lazy"
                 />
             </a>
             <a href="https://nauxnam.net" target="_blank" rel="noreferrer">
                 <img
                     src="/lain/nauxnam.gif"
                     alt="spinning human head with glitchy background effect"
+                    loading="lazy"
                 />
             </a>
-            <a href="https://lainnet.superglobalmegacorp.com/">
-                <img src="/lain/lainnet.png" alt="lainnet banner. red text on black background next to lain iwakura"/>
+            <a href="https://lainnet.superglobalmegacorp.com/" target="_blank">
+                <img
+                    src="/lain/lainnet.png"
+                    alt="lainnet banner. red text on black background next to lain iwakura"
+                    loading="lazy"
+                />
+            </a>
+            <a href="https://nihilism.network" target="_blank" rel="noreferrer">
+                <img
+                    src="/lain/nihilism-banner.png"
+                    alt="nihilism.network banner"
+                    loading="lazy"
+                />
+            </a>
+            <a href="https://datura.network" target="_blank" rel="noreferrer">
+                <img
+                    src="/lain/datura-banner.png"
+                    alt="datura.network banner"
+                    loading="lazy"
+                />
+            </a>
+            <a href="https://a10days.net" target="_blank" rel="noreferrer">
+                <img
+                    src="/lain/a10days.png"
+                    alt="a 10 days banner"
+                    loading="lazy"
+                />
+            </a>
+            <a href="https://scio.icu/" target="_blank" rel="noreferrer">
+                <img
+                    src="/lain/SCIO.png"
+                    alt="SCI0 banner"
+                    loading="lazy"
+                />
             </a>
         </div>
     )

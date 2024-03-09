@@ -81,8 +81,26 @@ export default function Friends() {
                     loading="lazy"
                 />
             </a>
-            <a href="https://zinricky.tilde.team/">
-                <img src="/buttons/zinricky.png" alt="zinrickys button !" />
+            <a href="https://zinricky.tilde.team/" target="_blank" rel="noreferrer">
+                <img
+                    src="/buttons/zinricky.png"
+                    alt="zinrickys button !"
+                    loading="lazy"
+                />
+            </a>
+            <a href="https://psychcool.neocities.org" target="_blank" rel="noreferrer">
+                <img
+                    src="/buttons/psychool.png"
+                    alt="psychools button! lots of colours and wow and cool and etc"
+                    loading="lazy"
+                />
+            </a>
+            <a href="https://gau7ilu.xyz" target="_blank" rel="noreferrer">
+                <img
+                    src="/buttons/gau7ilu.png"
+                    alt="gau7ilu's blog button!"
+                    loading="lazy"
+                />
             </a>
         </div>
     )
