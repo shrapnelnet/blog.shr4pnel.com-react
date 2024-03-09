@@ -81,6 +81,9 @@ export default function Friends() {
                     loading="lazy"
                 />
             </a>
+            <a href="https://zinricky.tilde.team/">
+                <img src="/buttons/zinricky.png" alt="zinrickys button !" />
+            </a>
         </div>
     )
 }
